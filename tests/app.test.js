@@ -91,4 +91,38 @@ getElement('#monthlyGoal').dispatch('change');
 assert.equal(storage.get('boku-tiranon-monthly-goal'), '12');
 assert.equal(getElement('#goalProgressText').textContent, '今月 2 / 12 投稿');
 
+// 投稿済みのときだけ実績欄が表示される。
+getElement('#status').value = 'アイデア';
+getElement('#status').dispatch('change');
+assert.equal(getElement('#performanceFields').hidden, true);
+getElement('#status').value = '投稿済み';
+getElement('#status').dispatch('change');
+assert.equal(getElement('#performanceFields').hidden, false);
+
+// 既存投稿を開いて編集しても、追加した実績と既存項目が維持される。
+getElement('#postList').dispatch('click', { target: { dataset: { edit: 'new-1' } } });
+assert.equal(getElement('#postDialog').open, true);
+assert.equal(getElement('#views').value, 1200);
+getElement('#title').value = '更新したリール';
+getElement('#postForm').dispatch('submit');
+const updated = JSON.parse(storage.get('boku-tiranon-posts'));
+assert.equal(updated.length, 2);
+assert.equal(updated.find((post) => post.id === 'new-1').title, '更新したリール');
+assert.equal(updated.find((post) => post.id === 'new-1').saves, 25);
+
+// 検索、ステータス絞り込み、削除の既存機能も動作する。
+getElement('#searchInput').value = '更新した';
+getElement('#searchInput').dispatch('input');
+assert.match(getElement('#postList').innerHTML, /更新したリール/);
+assert.doesNotMatch(getElement('#postList').innerHTML, /以前の投稿/);
+getElement('#searchInput').value = '';
+getElement('#filterTabs').dispatch('click', { target: { dataset: { filter: 'アイデア' } } });
+assert.equal(getElement('#resultCount').textContent, '0件');
+getElement('#filterTabs').dispatch('click', { target: { dataset: { filter: 'すべて' } } });
+getElement('#postList').dispatch('click', { target: { dataset: { delete: 'new-1' } } });
+assert.equal(getElement('#deleteDialog').open, true);
+getElement('#confirmDelete').dispatch('click');
+assert.equal(JSON.parse(storage.get('boku-tiranon-posts')).length, 1);
+assert.equal(JSON.parse(storage.get('boku-tiranon-posts'))[0].id, 'legacy-1');
+
 console.log('app tests passed');
