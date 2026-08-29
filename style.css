@@ -7,7 +7,7 @@ button { cursor:pointer; }
 .header-inner,.container { width:min(1120px,calc(100% - 40px)); margin:auto; }
 .header-inner { min-height:76px; display:flex; align-items:center; justify-content:space-between; }
 .brand { display:flex; align-items:center; gap:10px; color:var(--ink); text-decoration:none; }
-.brand-mark { width:46px; height:46px; display:grid; place-items:center; font-size:25px; background:var(--mint-pale); border-radius:14px; transform:rotate(-3deg); }
+.brand-mark { width:46px; height:46px; display:block; flex:0 0 46px; object-fit:cover; background:var(--mint-pale); border-radius:14px; transform:rotate(-3deg); }
 .brand strong { font-size:19px; display:block; line-height:1.15; }.brand small { color:var(--mint-dark); font-weight:800; letter-spacing:.16em; font-size:9px; }
 .posted-count { display:flex; align-items:center; gap:7px; background:var(--mint-pale); color:var(--mint-dark); padding:9px 15px; border-radius:99px; font-size:13px; font-weight:700; }
 .posted-count strong { font-size:21px; }.count-icon { display:grid; place-items:center; width:22px; height:22px; color:white; background:var(--mint); border-radius:50%; }
@@ -72,7 +72,7 @@ label { display:flex; flex-direction:column; gap:7px; font-size:12px; font-weigh
 @media (max-width:390px) {
   .header-inner,.container { width:calc(100% - 24px); }
   .brand strong { font-size:17px; }
-  .brand-mark { width:42px; height:42px; }
+  .brand-mark { width:42px; height:42px; flex-basis:42px; }
   .hero h1 { font-size:27px; letter-spacing:0; }
   .goal-label { gap:8px; }
   .goal-label strong { font-size:13px; }
