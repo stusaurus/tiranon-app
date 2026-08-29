@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ぼくティラノン 投稿管理アプリの画面プレビュー</title>
+  <desc id="desc">ミントグリーンを基調とした投稿管理画面。検索、ステータス絞り込み、投稿カードが表示されています。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#245e50" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f8fbfa"/>
+  <rect width="1200" height="78" fill="#fff"/><line y1="77" x2="1200" y2="77" stroke="#dbe9e5"/>
+  <rect x="62" y="16" width="46" height="46" rx="14" fill="#e9f9f4"/><text x="85" y="47" text-anchor="middle" font-size="27">🦖</text>
+  <text x="120" y="38" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="19">ぼくティラノン</text>
+  <text x="120" y="54" fill="#208f75" font-family="sans-serif" font-weight="700" font-size="9" letter-spacing="2">POST PLANNER</text>
+  <rect x="1010" y="19" width="130" height="40" rx="20" fill="#e9f9f4"/><circle cx="1034" cy="39" r="11" fill="#57c9aa"/><path d="m1029 39 3 3 6-7" fill="none" stroke="white" stroke-width="2"/>
+  <text x="1052" y="44" fill="#208f75" font-family="sans-serif" font-weight="700" font-size="13">投稿済み  1 件</text>
+
+  <text x="62" y="134" fill="#208f75" font-family="sans-serif" font-weight="700" font-size="11" letter-spacing="2">CONTENT IDEAS</text>
+  <text x="62" y="180" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="38">次は、なにを投稿する？</text>
+  <text x="62" y="211" fill="#6f8581" font-family="sans-serif" font-size="15">思いついたアイデアを、忘れないうちにメモしておこう。</text>
+  <rect x="941" y="158" width="199" height="54" rx="13" fill="#208f75" filter="url(#shadow)"/><text x="1040" y="192" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="700" font-size="15">＋  新しいアイデア</text>
+
+  <rect x="62" y="258" width="390" height="47" rx="12" fill="white" stroke="#dbe9e5"/><text x="82" y="288" fill="#6f8581" font-family="sans-serif" font-size="22">⌕</text><text x="115" y="287" fill="#82938f" font-family="sans-serif" font-size="13">タイトルや台本を検索...</text>
+  <rect x="723" y="258" width="417" height="47" rx="12" fill="#edf3f1"/><rect x="729" y="263" width="92" height="37" rx="9" fill="white"/><text x="775" y="287" text-anchor="middle" fill="#208f75" font-family="sans-serif" font-weight="700" font-size="13">すべて  3</text><text x="869" y="287" text-anchor="middle" fill="#6f8581" font-family="sans-serif" font-weight="700" font-size="13">アイデア</text><text x="968" y="287" text-anchor="middle" fill="#6f8581" font-family="sans-serif" font-weight="700" font-size="13">作成中</text><text x="1076" y="287" text-anchor="middle" fill="#6f8581" font-family="sans-serif" font-weight="700" font-size="13">投稿済み</text>
+  <text x="62" y="353" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="18">投稿リスト</text><rect x="166" y="335" width="36" height="23" rx="12" fill="#edf3f1"/><text x="184" y="351" text-anchor="middle" fill="#6f8581" font-family="sans-serif" font-size="11">3件</text>
+
+  <g transform="translate(62 380)">
+    <rect width="346" height="285" rx="17" fill="white" stroke="#dbe9e5" filter="url(#shadow)"/><rect x="20" y="20" width="65" height="26" rx="13" fill="#fff4cf"/><text x="52" y="37" text-anchor="middle" fill="#9b7620" font-family="sans-serif" font-weight="700" font-size="11">アイデア</text><text x="326" y="37" text-anchor="end" fill="#6f8581" font-family="sans-serif" font-size="11">理科</text>
+    <text x="20" y="84" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="17">ティラノサウルスの意外な秘密</text><text x="20" y="117" fill="#6f8581" font-family="sans-serif" font-size="12">実は知られていないティラノサウルスの</text><text x="20" y="138" fill="#6f8581" font-family="sans-serif" font-size="12">秘密を3つ紹介するよ！</text><line x1="20" y1="229" x2="326" y2="229" stroke="#eef3f2"/><text x="20" y="260" fill="#6f8581" font-family="sans-serif" font-size="11">📅 2026.09.05 投稿予定</text><rect x="272" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="289" y="264" text-anchor="middle" fill="#208f75" font-size="18">✎</text><rect x="310" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="327" y="264" text-anchor="middle" fill="#6f8581" font-size="18">⌫</text>
+  </g>
+  <g transform="translate(427 380)">
+    <rect width="346" height="285" rx="17" fill="white" stroke="#dbe9e5"/><rect x="20" y="20" width="58" height="26" rx="13" fill="#e5f4fe"/><text x="49" y="37" text-anchor="middle" fill="#3978a0" font-family="sans-serif" font-weight="700" font-size="11">作成中</text><text x="326" y="37" text-anchor="end" fill="#6f8581" font-family="sans-serif" font-size="11">共感/あるある</text>
+    <text x="20" y="84" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="17">恐竜好きあるある</text><text x="20" y="117" fill="#6f8581" font-family="sans-serif" font-size="12">恐竜の名前だけはスラスラ言える。</text><text x="20" y="138" fill="#6f8581" font-family="sans-serif" font-size="12">みんなはいくつ当てはまる？</text><line x1="20" y1="229" x2="326" y2="229" stroke="#eef3f2"/><text x="20" y="260" fill="#6f8581" font-family="sans-serif" font-size="11">📅 2026.09.10 投稿予定</text><rect x="272" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="289" y="264" text-anchor="middle" fill="#208f75" font-size="18">✎</text><rect x="310" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="327" y="264" text-anchor="middle" fill="#6f8581" font-size="18">⌫</text>
+  </g>
+  <g transform="translate(792 380)">
+    <rect width="346" height="285" rx="17" fill="white" stroke="#dbe9e5"/><rect x="20" y="20" width="65" height="26" rx="13" fill="#dff7ef"/><text x="52" y="37" text-anchor="middle" fill="#207a64" font-family="sans-serif" font-weight="700" font-size="11">投稿済み</text><text x="326" y="37" text-anchor="end" fill="#6f8581" font-family="sans-serif" font-size="11">その他</text>
+    <text x="20" y="84" fill="#263b39" font-family="sans-serif" font-weight="700" font-size="17">はじめまして、ぼくティラノン！</text><text x="20" y="117" fill="#6f8581" font-family="sans-serif" font-size="12">恐竜のふしぎや楽しいお話を</text><text x="20" y="138" fill="#6f8581" font-family="sans-serif" font-size="12">これからたくさん届けるよ。</text><line x1="20" y1="229" x2="326" y2="229" stroke="#eef3f2"/><text x="20" y="260" fill="#6f8581" font-family="sans-serif" font-size="11">📅 2026.08.29 投稿予定</text><rect x="272" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="289" y="264" text-anchor="middle" fill="#208f75" font-size="18">✎</text><rect x="310" y="241" width="34" height="34" rx="9" fill="#f2f6f5"/><text x="327" y="264" text-anchor="middle" fill="#6f8581" font-size="18">⌫</text>
+  </g>
+  <text x="600" y="728" text-anchor="middle" fill="#82938f" font-family="sans-serif" font-size="12">PC表示イメージ（入力した投稿はブラウザ内に保存されます）</text>
+</svg>
