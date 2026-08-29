@@ -33,3 +33,48 @@ label { display:flex; flex-direction:column; gap:7px; font-size:12px; font-weigh
 @media (max-width:800px) { .post-grid { grid-template-columns:repeat(2,1fr); }.toolbar { align-items:stretch; flex-direction:column; }.search-wrap { max-width:none; }.filter-tabs { overflow-x:auto; }.filter-tabs button { flex:1; white-space:nowrap; } }
 @media (max-width:800px) { .monthly-goal { grid-template-columns:1fr auto; }.goal-progress { grid-column:1/-1; grid-row:2; }.analytics-grid { grid-template-columns:1fr; }.format-average-list { grid-template-columns:1fr; } }
 @media (max-width:560px) { .header-inner,.container { width:min(100% - 28px,1120px); }.header-inner { min-height:66px; }.posted-count>span:not(.count-icon) { display:none; }.posted-count { padding:8px 11px; }.container { padding-top:35px; }.hero { align-items:flex-start; flex-direction:column; margin-bottom:28px; gap:20px; }.hero .primary-button { width:100%; }.monthly-goal { grid-template-columns:1fr; gap:17px; margin-top:0; padding:18px; }.goal-progress { grid-column:auto; grid-row:auto; }.goal-input { justify-content:start; }.post-grid { grid-template-columns:1fr; }.filter-tabs button { padding:8px 10px; }.field-row,.metric-row { grid-template-columns:1fr; }.date-field { max-width:none; } #postForm { padding:21px; }.dialog-actions button { flex:1; }.section-title { align-items:start; flex-direction:column; gap:5px; } }
+
+/* iPhoneの縦画面を基準にした、操作しやすいモバイルレイアウト */
+@media (max-width:560px) {
+  .container { padding:27px 0 58px; }
+  .hero { gap:16px; margin-bottom:20px; }
+  .hero h1 { margin-bottom:8px; font-size:clamp(27px,8vw,34px); line-height:1.35; }
+  .hero p:not(.eyebrow) { font-size:13px; line-height:1.7; }
+  .hero .primary-button { min-height:52px; border-radius:14px; font-size:15px; }
+
+  .monthly-goal { gap:14px; margin:0 0 26px; padding:16px; border-radius:16px; }
+  .goal-copy { gap:10px; }
+  .goal-icon { width:38px; height:38px; border-radius:11px; font-size:19px; }
+  .goal-copy h2 { font-size:15px; }
+  .goal-progress { width:100%; min-width:0; }
+  .goal-label { align-items:center; gap:16px; margin-bottom:9px; }
+  .goal-label strong { min-width:0; font-size:14px; line-height:1.4; white-space:nowrap; }
+  .goal-label span { flex:0 0 auto; padding:3px 8px; background:var(--mint-pale); border-radius:99px; font-size:12px; }
+  .progress-track { height:8px; }
+  .goal-input { display:flex; flex-direction:row; align-items:center; gap:7px; width:max-content; font-size:11px; }
+  .goal-input input { width:58px; height:38px; padding:5px 6px; font-size:14px; }
+
+  .toolbar { gap:12px; margin-bottom:25px; }
+  .search-wrap input { min-height:48px; font-size:14px; }
+  .filter-tabs { width:100%; padding:4px; }
+  .filter-tabs button { min-height:40px; padding:8px 11px; }
+  .list-heading { margin-bottom:13px; }
+  .post-card { min-height:238px; padding:18px; }
+
+  .analytics { margin-top:38px; padding-top:30px; }
+  .section-title { margin-bottom:16px; }
+  .section-title h2 { font-size:20px; }
+  .analytics-grid { gap:11px; }
+  .analysis-card { min-height:96px; padding:15px; }
+  .format-analysis { padding:16px; }
+}
+
+@media (max-width:390px) {
+  .header-inner,.container { width:calc(100% - 24px); }
+  .brand strong { font-size:17px; }
+  .brand-mark { width:42px; height:42px; }
+  .hero h1 { font-size:27px; letter-spacing:0; }
+  .goal-label { gap:8px; }
+  .goal-label strong { font-size:13px; }
+  .filter-tabs button { padding-inline:8px; font-size:12px; }
+}
